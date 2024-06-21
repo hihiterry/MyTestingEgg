@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: Verdana;
+    font-size: 2em;
+    background-color: rgba(224, 153, 0, 0.929);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+    
+h2{
+    text-align: center;
+    margin: 50px;
+}
+
+#egg{
+    display: inline-block;  
+    transition: transform 0.1s;
+}
+
+@keyframes shrink {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.shrink {
+    animation: shrink 0.1s;
+}
